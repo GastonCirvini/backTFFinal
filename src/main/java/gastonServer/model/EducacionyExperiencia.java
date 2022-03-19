@@ -1,6 +1,7 @@
 
 package gastonServer.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,7 +15,9 @@ public class EducacionyExperiencia {
     private Long id;
     private String titulo;
     private String titulo1;
+    @Column(length=2000)  
     private String datos;
+    @Column(length=2000)  
     private String datos1;
 
     
